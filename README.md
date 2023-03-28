@@ -10,6 +10,10 @@ Durante el desarrollo me di cuenta que la URL que mandaron estaba errada ya que 
 
 No se realizaron pruebas unitarias ya que por falta de tiempo no se lograron escribir.
 
+Para la parte de la UI esta se configuro lo mas posible a que sea responsibe, pero a la poca experiencia que tengo con este tipo de requerimiento, puede que quede raro en la forma en la que se muestran en pantallas de celulares.
+
+Tampoco se configuro la prueba para que use un tipo de orientacion, ya sea para tabletas o para moviles. Por lo que en general deberia trabajar bien en pantallas de 16:9 de screen ratio.
+
 Se utilizaron los siguientes patrones:
 - MVVM, como variacion donde se utliza tanto un controlador como un presentador para desacoplar lo mas que se pudo
 - ServiceLocator, para registrar eventos globales y poder accederlos y ejecutarlos
