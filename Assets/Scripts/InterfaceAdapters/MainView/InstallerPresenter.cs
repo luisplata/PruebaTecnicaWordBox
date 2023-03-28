@@ -24,7 +24,6 @@ namespace InterfaceAdapters.MainView
             {
                 var item = new UserData(result);
                 await item.LoadPicture();
-                //_model.ListOfUserData.Value.Add(item);
                 userData.Add(item);
             }
             _model.listOfUserDataAlter?.Invoke(userData);

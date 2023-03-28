@@ -17,7 +17,6 @@ namespace InterfaceAdapters.MainView
             _disposables = new List<IDisposable>();
             _model = model;
             _request = request;
-            //_model.LoadDataFromWebSite.Subscribe(OnLoadDataFromWebSite).AddTo(_disposables);
             _model.loadDataFromWebSiteAlter += OnLoadDataFromWebSite;
         }
 

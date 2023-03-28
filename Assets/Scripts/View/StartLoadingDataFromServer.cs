@@ -21,14 +21,6 @@ namespace View
             Debug.Log($"Start request");
             _viewModel.loadDataFromWebSiteAlter?.Invoke(url);
             Debug.Log($"request invoked");
-            //_viewModel.LoadDataFromWebSite.ForceExecute(url);
-
-            /*_viewModel.ListOfUserData.Subscribe((list) =>
-            {
-                //Debug.Log($"load data in view");
-                //Instantiate objects and configure de contain in view
-                //showData.LoadData(list);
-            }).AddTo(_disposables);*/
             _viewModel.listOfUserDataAlter += list =>
             {
                 Debug.Log($"load data in view alter");
